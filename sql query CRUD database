@@ -18,7 +18,7 @@ CREATE TABLE "Reflections" (
   "updatedAt" TIMESTAMPTZ NOT NULL,  -- Perbaikan penulisan nama kolom
 
   CONSTRAINT fk_user FOREIGN KEY ("UserId")
-    REFERENCES public."Users"(id)
+    REFERENCES public."users"(id)
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
