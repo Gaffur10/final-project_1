@@ -41,10 +41,10 @@ class UserController {
         [email]
       );
 
-      if (!userdata.rows[0] || !comparePassword(password, data.rows[0].password)) {
+      if (!userdata.rows[0] || !comparePassword(password, userdata.rows[0].password)) {
         throw {
           code: 401,
-          message: "Email or password is invalid!",
+          message: "Invalid email or password!",
         };
       }
       const token = generateToken({

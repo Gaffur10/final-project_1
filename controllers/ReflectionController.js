@@ -47,7 +47,7 @@ class ReflectionController {
         };
       }
 
-      res.status(201).json(data.rows[0]);
+      res.status(200).json(data.rows[0]);
     } catch (error) {
       res.status(error.code || 500).json({ message: error.message });
     }
