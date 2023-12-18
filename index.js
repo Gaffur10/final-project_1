@@ -7,10 +7,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
 
-app.get("/", (req, res) => {
-  res.send("Final Project 1");
-});
-
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
