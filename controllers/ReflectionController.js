@@ -70,7 +70,7 @@ class ReflectionController {
       }
 
       res.status(200).json({
-        message: "Successfully deleted",
+        message: "Success delete",
       });
     } catch (error) {
       res.status(error.code || 500).json({ message: error.message });
